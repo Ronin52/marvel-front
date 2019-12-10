@@ -1,7 +1,10 @@
 import Api from './http.js';
 import Translator from './translator.js';
 import Router from './router.js';
-import MainPage from './pages/MainPage.js'
+import Main from './pages/main.js'
+import Characters from './pages/characters.js'
+import Comics from './pages/comics.js'
+
 
 class Context {
     constructor(rootEl, api, router, translator, mediaUrl) {
@@ -12,7 +15,7 @@ class Context {
             this.route(path, false);
         });
         this._translator = translator;
-        this._path = '/';
+        this._path = '/characters'; //TODO: не забыть поменять на рут
         this._pathParams = {};
         this._component = null;
         this._mediaUrl = mediaUrl;
@@ -81,7 +84,10 @@ class Context {
 const translator = new Translator();
 const router = new Router();
 
-router.register('/', MainPage);
+router.register('/', Main);
+router.register('/characters', Characters);
+router.register('/comics', Comics);
+
 
 const backendUrl = 'http://localhost:9999';
 
