@@ -1,0 +1,27 @@
+{
+  "name": "marvel-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "get-value": "^2.0.6",
+    "graceful-fs": "^4.2.3",
+    "http-parser-js": "^0.4.10",
+    "inherits": "^2.0.4",
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "live-server --entry-file=index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ronin52/marvel-front.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ronin52/marvel-front/issues"
+  },
+  "homepage": "https://github.com/Ronin52/marvel-front#readme"
+}
